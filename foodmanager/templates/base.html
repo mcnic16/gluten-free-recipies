@@ -19,23 +19,23 @@
         <!--------------navbar------------------>
         <nav class="light red ">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#!" class="brand-logo">Gluten Free Recipes</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">Javascript</a></li>
-                    <li><a href="mobile.html">Mobile</a></li>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
+                    <li><a href="{{ url_for('cocktails) }}">Cocktails</a></li>
+                    <li><a href="{{ url_for('recipes') }}">My Recipes</a></li>
                 </ul>
             </div>
         </nav>
 
         <!--------------mobile navbar------------------>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
+            <li><a href="{{ url_for('cocktails) }}">Cocktails</a></li>
+            <li><a href="{{ url_for('recipes') }}">My Recipes</a></li>
         </ul>
 
     </header>
