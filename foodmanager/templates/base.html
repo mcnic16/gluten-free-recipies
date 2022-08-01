@@ -17,9 +17,9 @@
 <body>
     <header>
         <!--------------navbar------------------>
-        <nav class="light red ">
+        <nav class="light red">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Gluten Free Recipes</a>
+                <a href="#!" class="brand-logo center">Gluten Free Recipes</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
@@ -40,6 +40,24 @@
 
     </header>
 
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    
+     </main>
+     <!----------------Footer------------------->
+     <footer class="page-footer light red">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            
+          </div>
+        </div>
+    
+      </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
