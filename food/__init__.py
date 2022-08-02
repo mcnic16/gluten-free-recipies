@@ -11,4 +11,4 @@ app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("DB_URL")
 
 db = SQLAlchemy(app)
 
-from foodmanager import routes  # noqa
+from food import routes  # noqa

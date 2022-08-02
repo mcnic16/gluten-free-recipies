@@ -1,5 +1,5 @@
 import os
-from foodmanager import app
+from food import app
 
 
 if __name__ == "__main__":
