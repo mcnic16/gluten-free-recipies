@@ -23,9 +23,9 @@
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
-                    <li><a href="{{ url_for('cocktails) }}">Cocktails</a></li>
-                    <li><a href="{{ url_for('recipes') }}">My Recipes</a></li>
+                   
+
+
                 </ul>
             </div>
         </nav>
@@ -33,9 +33,9 @@
         <!--------------mobile navbar------------------>
         <ul class="sidenav" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('desserts') }}">Desserts</a></li>
-            <li><a href="{{ url_for('cocktails) }}">Cocktails</a></li>
-            <li><a href="{{ url_for('recipes') }}">My Recipes</a></li>
+        
+
+
         </ul>
 
     </header>
@@ -43,21 +43,22 @@
     <main class="container">
         {% block content %}
         {% endblock %}
-    
-     </main>
-     <!----------------Footer------------------->
-     <footer class="page-footer light red">
+
+    </main>
+    <!----------------Footer------------------->
+    <footer class="page-footer light red">
         <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Footer Content</h5>
-              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+
             </div>
-            
-          </div>
         </div>
-    
-      </footer>
+
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
